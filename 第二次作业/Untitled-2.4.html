@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>sy2-4.htm</title>
+</head>
+
+<body>
+	<h1 align="center">用户注册</h1>
+	<table align="center" width="400" border="2" bordercolor=#08B7EC>
+		<tr bgcolor=#B0AFF4 >
+			<th align="right" width="100">用户名</th>
+			<th align="left" width="300"><input type="text" name="userid" id="userid" size="8" maxlength="8"></th>
+		</tr>
+		<tr bgcolor=#B0AFF4 >
+			<th align="right" width="100">密码</th>
+			<th align="left" width="300"><input type="password" name="pass" id="pass1"/></th>
+		</tr>
+		<tr bgcolor=#B0AFF4 >
+			<th align="right" width="100">确认密码</th>
+			<th align="left" width="300"><input type="password" name="pass" id="pass2"  onKeyUp="validate()/><span id="提示"></span></th>
+		</tr>
+		<tr bgcolor=#B0AFF4 >
+			<th align="right" width="100">性别</th>
+			<th align="left" width="300">
+				<input type="radio" name="sex" value="男"/>男
+				<input type="radio" name="sex" value="女"/>女
+			</th>
+		</tr>
+		<tr bgcolor=#B0AFF4 >
+			<th align="right" width="100">出生日期</th>
+			<th align="left" width="300"><input type="date" name="birthday" id="birthday"/></th>
+		</tr>
+		<tr bgcolor=#B0AFF4 >
+			<th align="right" width="100">联系电话</th>
+			<th align="left" width="300"><input type="number" name="phone" id="phone" min="0" max="15"/></th>
+		</tr>
+		<tr bgcolor=#B0AFF4 >
+			<th align="right" width="100">邮箱</th>
+			<th align="left" width="300"><input type="" name=""/></th>
+		</tr>
+		<tr bgcolor=#B0AFF4 >
+			<th align="right" width="100">技术</th>
+			<th align="left" width="300">
+				<input type="checkbox" name="ablility" value="java"/>java
+				<input type="checkbox" name="ablility" value="servlet"/>servlet
+				<input type="checkbox" name="ablility"value="jsp"/>jsp
+			</th>
+		</tr>
+		<tr bgcolor=#B0AFF4 >
+			<th align="right" width="100">网址</th>
+			<th align="left" width="300"><input type="text" name="website" id="website"/></th>
+		</tr>
+		<tr bgcolor=#B0AFF4 >
+			<th align="right" width="100">喜欢的颜色</th>
+			<th align="left" width="300">
+				<input type="color" name="color" id="color" />
+		</tr>
+		<tr bgcolor=#B0AFF4 >
+			<th align="right" width="100">年级</th>
+			<th align="left" width="300">
+				<select name="grade" id="grade">
+				<option value="2018">2018</option>
+				<option value="2019">2019</option>
+				<option value="2020">2020</option>
+				<option value="2021">2021</option>
+				<option value="2022">2022</option>
+				</select>
+			</th>
+		</tr>
+		<tr bgcolor=#B0AFF4 >
+			<th align="right" width="100">专业</th>
+			<th align="left" width="300">
+				<select name="specialty" id="specialty">
+				<option value="1">经济统计</option>
+				<option value="">人力资源管理</option>
+				<option value="">会计学</option>
+				<option value="">金融学</option>
+				<option value="">国际经济与贸易</option>
+				<option value="">市场营销</option>
+				<option value="">数据科学与大数据技术</option>
+				</select>
+			</th>
+		</tr>
+		<tr bgcolor=#B0AFF4 >
+			<th align="right" width="100">自我介绍</th>
+			<th align="left" width="300">
+				<textarea name="introduction" id="introduction" cols="40" rows="10">请输入个人信息</textarea>
+		</th>
+		<tr>
+		  <td align="center" colspan="2">
+				<input type="submit" name="submit"/>
+				<input type="reset" name="reset"/>
+		  </td>
+		</tr>
+				
+	</table>
+</body>
+</html>
